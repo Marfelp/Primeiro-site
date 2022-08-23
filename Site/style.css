@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@font-face {
+    font-family: 'Morning Signature';
+    src: url('./Fontes/morning_signature/Morning\ Signature.otf');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #889ea1;
+    --cor2: #250507;
+    --cor3: #1C1A14;
+    --cor4: #1F110C;
+    --cor5: #0D0D0D;
+
+    --font-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Berkshire Swash', cursive;
+    --font-vampiro: 'Morning Signature', cursive;
+    
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #361122;
+    font-family: var(--font-padrão);
+}
+
+header {
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    text-align: center;
+    padding-top: 40px; /* Bom para aumentar a distancia com o inicio da página* ou  para aumentar o header*/
+}
+
+header img {
+    margin: 10px 0 30px; /*bom para centralizar as letras no meio ou colocar aonde quiser*/
+    top: 50px;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.534);
+
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    padding: 10px 20px 10px 20px;
+}
+
+nav > a:hover {
+    background-color: rgb(252, 30, 30);
+    color: rgb(73, 0, 0);
+}
+
+main {
+    margin-bottom: 30px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    min-width: 300px; /*colocar centralizado na tela*/
+    max-width: 1000px;/*colocar centralizado na tela*/
+    background-color: #0B0000;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+
+main h1 {
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    font-size: 3em;
+    color: rgb(224, 52, 0);
+    text-align: center;
+    }
+
+main p {
+    color: rgba(255, 255, 255, 0.856);
+    margin: 15px;
+    line-height: 1em;
+    text-align: justify;
+    font-weight: inherit;
+    font-size: 1.3em;
+}
+
+span.subitens{
+    color: aquamarine;
+}
+
+main a {
+    text-decoration: none;
+    color: rgb(224, 52, 0);
+    font-family: var(--font-destaque);
+    font-size: 1.2em;
+}
+
+main a:hover {
+    text-decoration: underline;
+
+}
+
+aside {
+    border-color: red;
+    border-width: 1px;
+    border-style: solid;
+}
+
+aside > p {
+    color: #ffee00c9;
+}
+
+#caixa {
+    border-color: red;
+    border-width: 1px;
+    border-style: double;
+    
+}
+
+.titulos > p {
+    margin: 0px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+    color: rgb(202, 89, 44);
+}
+
+.titulo2 {
+    margin: auto;
+    color: #ff0000;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    max-width: 1050px;
+    min-width: 300px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.808);
+    border-radius:  0 10px 0px;
+
+}
